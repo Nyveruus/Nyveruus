@@ -1,4 +1,4 @@
-## Favourite Projects - written in C
+## Featured Projects - written in C
 
 - [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger)
 - [Packet Sniffer](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/packet-sniffer)
