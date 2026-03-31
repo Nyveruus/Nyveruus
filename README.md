@@ -4,8 +4,8 @@ I gravitate towards low-level programming because there are no abstractions to h
 
 Currently I’m deepening my knowledge through projects, books, and man pages (lots of man pages...) 
 
-Languages: C, Bash, Python, Javascript, HTML/CSS
-Learning: x86-64 ASM, Go
+**Languages:** C, Bash, Python, Javascript, HTML/CSS  
+**Learning:** x86-64 ASM, Go
 
 ## Currently Reading
 
