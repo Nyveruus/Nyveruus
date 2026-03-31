@@ -12,7 +12,7 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 - CS:APP
 - OSTEP
 
-## Notable Projects — C
+## Notable Projects in C
 
 - [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger) — Kernel-level keylogger that reads raw /dev/input events, exfiltrating over TCP. It includes detection and prevention notes  
 - [Packet Sniffer](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/packet-sniffer) — Promiscuous frame capture across all interfaces, writes to a rolling 2hr .pcap file. Systemd service.  
@@ -22,6 +22,6 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 - [IPC](https://github.com/Nyveruus/systems-programming/tree/main/projects/ipc) — Unix pipes, I/O redirection and parallel process execution from scratch using fork, dup2, execl.  
 - [Hexdump Tool](https://github.com/Nyveruus/systems-programming/tree/main/tools/hexdump) — xxd-style hex dump utility with configurable width, grouping, and column output. Built for pipelines.  
 
-## Notable Projects — Bash
+## Notable Projects in Bash
 
 - [Linux Audit Tool](https://github.com/Nyveruus/Linux-and-bash/tree/main/security/audit-tool) — Linux auditing and hardening tool for Debian. Checks accounts, SSH config, password policy, and file permissions.
