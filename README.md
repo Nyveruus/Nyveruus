@@ -14,10 +14,10 @@ Currently I’m deepening my knowledge through projects, books, and man pages (l
 
 ## Notable Projects - written in C
 
+- [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger)
 - [Packet Sniffer](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/packet-sniffer) 
 - [SYN Scanner](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/port-scanner)
 - [HTTP Server](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/http-server)
 - [TCP Server & Client](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/tcp-suite)
-- [Hexdump Tool](https://github.com/Nyveruus/systems-programming/tree/main/tools/hexdump)
 - [IPC](https://github.com/Nyveruus/systems-programming/tree/main/projects/ipc)
-- [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger)
+- [Hexdump Tool](https://github.com/Nyveruus/systems-programming/tree/main/tools/hexdump)
