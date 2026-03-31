@@ -20,7 +20,7 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 - [HTTP Server](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/http-server) — HTTP/1.1 static file server, accept-then-thread model, MIME type support. No libraries.  
 - [TCP Server & Client](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/tcp-suite) — Poll-based TCP chat, server broadcasts to all clients, handles up to 100 concurrent connections.  
 - [IPC](https://github.com/Nyveruus/systems-programming/tree/main/projects/ipc) — Unix pipes, I/O redirection and parallel process execution from scratch using fork, dup2, execl.  
-- [Hexdump Tool](https://github.com/Nyveruus/systems-programming/tree/main/tools/hexdump) — xxd-style hex dump utility with configurable width, grouping, and column output. Built for pipelines.  
+- [Hexdump Tool](https://github.com/Nyveruus/systems-programming/tree/main/tools/hexdump) — xxd-style hex dump utility with configurable width, grouping, and column output with proper argument parsing with getopt(). Built for pipelines.  
 
 ## Notable Projects in Bash
 
