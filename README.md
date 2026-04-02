@@ -2,7 +2,7 @@ I'm an autodidact from Spain. I value depth, knowing how things work under the h
 
 Overall, I gravitate towards low-level programming because there are generally no abstractions to hide behind, and I find the elegance and precision of statically typed languages like C to be compelling. Broadly speaking, I'm learning about systems programming, socket programming, and Linux internals, with an eye towards system administration. My favourite languages are C and Bash. 
 
-Most of my time goes into projects, books, and man pages (lots of man pages...)
+Most of my time goes into learning projects, books, and man pages (lots of man pages...)
 
 **Languages:** C, Bash, Python, Javascript, HTML/CSS  
 **Learning:** x86-64 ASM, Go
