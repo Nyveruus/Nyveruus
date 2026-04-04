@@ -2,7 +2,7 @@ I'm an autodidact from Spain. I value depth, knowing how things work under the h
 
 Overall, I gravitate towards low-level programming because there are generally no abstractions to hide behind, and I find the elegance and precision of statically typed languages like C to be compelling. Broadly speaking, I'm learning about systems programming, socket programming, and Linux internals, with an eye towards system administration. My favourite languages are C and Bash. 
 
-Most of my time goes into learning projects, books, and man pages (lots of man pages...)
+Most of my time goes into projects, books, and man pages (lots of man pages...)
 
 **Languages:** C, Bash, Python, Javascript, HTML/CSS  
 **Learning:** x86-64 ASM, Go
@@ -12,7 +12,7 @@ Most of my time goes into learning projects, books, and man pages (lots of man p
 - CS:APP
 - OSTEP
 
-## Some Notable Learning Projects in C
+## Notable Learning Projects in C
 
 - [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger) — Kernel-level keylogger that reads raw /dev/input events, exfiltrating over TCP. It includes detection and prevention notes  
 - [Packet Sniffer](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/packet-sniffer) — Promiscuous frame capture across all interfaces, writes to a rolling 2hr .pcap file. Systemd service.  
@@ -22,6 +22,6 @@ Most of my time goes into learning projects, books, and man pages (lots of man p
 - [IPC](https://github.com/Nyveruus/systems-programming/tree/main/projects/ipc) — Unix pipes, I/O redirection and parallel process execution using fork, dup2, execl.  
 - [Hexdump Tool](https://github.com/Nyveruus/systems-programming/tree/main/tools/hexdump) — xxd-style hex dump utility with configurable width, grouping, and column output with proper argument parsing with getopt(). Built for pipelines.  
 
-## Some Notable Learning Projects in Bash
+## Notable Learning Projects in Bash
 
 - [Linux Audit Tool](https://github.com/Nyveruus/Linux-and-bash/tree/main/security/audit-tool) — Linux auditing and hardening tool for Debian. Checks accounts, SSH config, password policy, and file permissions.
