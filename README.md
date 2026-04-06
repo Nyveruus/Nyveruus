@@ -12,7 +12,7 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 - CS:APP
 - OSTEP
 
-## Notable Learning Projects in C
+## Notable Projects in C
 
 - [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger) — Kernel-level keylogger that records a keyboard event file in /dev/input and then exfiltrates over TCP. It reads the stream into input_event structs (from linux/input.h) for parsing and recording. It includes detection and prevention in the README  
 - [SYN Scanner](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/port-scanner) — TCP port scanner that never completes the handshake. It implements a detached thread for listening for SYN-ACKS and printing the open ports, while another thread is in charge of creating and dispatching SYN packets with a raw socket. The raw socket is necessary for never completing the handshake, and IP/TCP headers and along with their checksums must and are manually computed for the socket.
@@ -22,6 +22,6 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 - [IPC](https://github.com/Nyveruus/systems-programming/tree/main/projects/ipc) — Unix pipes, I/O redirection and parallel process execution using fork, dup2, execl...
 - [Hexdump Tool](https://github.com/Nyveruus/systems-programming/tree/main/tools/hexdump) — xxd-style hex dump utility with configurable width, grouping, and column output with argument parsing with getopt(). For pipelines.  
 
-## Notable Learning Projects in Bash
+## Notable Projects in Bash
 
 - [Linux Audit Tool](https://github.com/Nyveruus/Linux-and-bash/tree/main/security/audit-tool) — Linux auditing and hardening tool for Debian. Checks accounts, SSH config, password policy, and file permissions.
