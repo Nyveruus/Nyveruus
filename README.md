@@ -7,11 +7,6 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 **Languages:** C, Bash, Python, Javascript, HTML/CSS  
 **Learning:** x86-64 ASM, Go
 
-### Reading
-
-- CS:APP
-- OSTEP
-
 ## Notable Projects in C
 
 - [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger) — Kernel-level keylogger that records a keyboard event file in /dev/input and then exfiltrates over TCP. It reads the stream into input_event structs (from linux/input.h) for parsing and recording. It includes detection and prevention in the README  
