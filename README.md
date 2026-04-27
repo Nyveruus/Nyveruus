@@ -1,6 +1,6 @@
 I'm an autodidact from Spain. I value depth of knowledge and learning rather than simply knowing how to use ephemeral tools. Understanding the system is what makes you able to administer and defend it effectively.
 
-Overall, I gravitate towards low-level programming because there are generally no abstractions to hide behind, and I find the control and precision of statically typed languages like C to be compelling and rather elegant. Broadly speaking, I'm learning about systems programming, socket programming, and Linux internals. My favourite languages are C and Bash. 
+I gravitate towards low-level programming because there are generally no abstractions to hide behind, and I find the control and precision of statically typed languages like C to be compelling and rather elegant. Broadly speaking, I'm learning about systems programming, socket programming, and Linux internals. My favourite languages are C and Bash. 
 
 Most of my time goes into projects, books, and man pages (lots of man pages...)
 
