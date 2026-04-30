@@ -29,7 +29,7 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 - [HTTP Server](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/http-server) — HTTP/1.1 static file server with MIME support. It uses an accept and then thread model. Uses TCP socket and parses HTTP GET methods with regex. If the requested file is found, a 200 ok is returned along with the file; otherwise 404
 
   
-- [TCP Server & Client](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/tcp-suite) — Poll based TCP chat, server broadcasts to all clients, handles up to 100 concurrent connections. Client connections and disconnections are tracked with poll
+- [TCP Server & Client](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/tcp-suite) — Poll based TCP chat, server broadcasts to all clients, handles up to 100 connections. Client connections and disconnections are tracked with poll
 
   
 - [IPC and Minishell](https://github.com/Nyveruus/systems-programming/tree/main/projects/ipc) — Unix pipes, I/O redirection and process execution demonstrations using fork, dup2, execl...
