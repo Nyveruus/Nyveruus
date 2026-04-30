@@ -42,4 +42,4 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 - [Linux Audit Tool](https://github.com/Nyveruus/Linux-and-bash/tree/main/security/audit-tool) — Linux auditing tool for Debian. Uses check functions to audit accounts, SSH config, password policy, and file permissions, rating each finding low, medium, or critical in severity. Supports argument parsing for targeting specific categories.
 
 
-- [rsync backup service](https://github.com/Nyveruus/Linux-and-bash/tree/main/backup/rsync-backup) — Systemd service, daily rsync backups to a file system, dates and logging
+- [rsync Backup Service](https://github.com/Nyveruus/Linux-and-bash/tree/main/backup/rsync-backup) — Systemd service, daily rsync backups to a file system, dates and logging
