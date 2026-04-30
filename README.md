@@ -1,6 +1,6 @@
-I'm an autodidact from Spain. I value depth of knowledge and learning rather than simply knowing how to use ephemeral tools. Understanding the system is what makes you able to administer and defend it effectively.
+I'm an autodidact from Spain. I value depth of knowledge and I love to learn. Understanding the system is what makes you able to administer and defend it effectively, rather than only knowing how to use ephemeral tools.
 
-I gravitate towards low-level programming because there are generally no abstractions to hide behind, and I find the control and precision of statically typed languages like C to be compelling and rather elegant. Broadly speaking, I'm learning about systems programming, socket programming, and Linux internals. My favourite languages are C and Bash. 
+I gravitate towards low-level programming because there are fewer abstractions and I find the control and precision of statically typed languages like C to be elegant and compelling. Broadly speaking, I'm learning about systems programming, socket programming, and Linux internals. My favourite languages are C and Bash. 
 
 Most of my time goes into projects, books, and man pages (lots of man pages...)
 
@@ -14,16 +14,19 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 
 ## Notable Projects in C
 
-- [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger) — Kernel-level keylogger that records a keyboard event file in /dev/input and then exfiltrates over TCP. It reads the stream into input_event structs (from linux/input.h) for parsing and recording. It includes detection and prevention in the README
+- [mTLS Chat](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/mtls-chat) — CLI mutual TLS chat with OpenSSL, selectable as server or client at runtime. All parties must present valid certificates signed by a common CA. Server multiplexes up to 100 client sockets and STDIN with poll(); minimum TLS protocol version for the handshake is TLS 1.3. On connect clients print the TLS session ticket and the server prints the client's IP. Continuation project of "TCP Server & Client" 
+
+
+- [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger) — Kernel-level keylogger. Records a keyboard event file in /dev/input and then exfiltrates over TCP. It reads the stream into input_event structs (from linux/input.h) for parsing and recording. It includes detection and prevention in the README
+
+
+- [Packet Sniffer](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/packet-sniffer) — Records frames across all interfaces (or user-specified), writes to a rolling 2hr .pcap file readable in tcpdump or Wireshark. It operates as a systemd service through install and uninstall Bash scripts. It catches all frames at the socket level after setting promisc mode with ioctl. Filtering occurs at a higher level with if_indextoname() and comparing to argv. A PCAP global header is written on each initialization of the PCAP file and PCAP packet headers are implemented after every recv()
 
   
-- [SYN Scanner](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/port-scanner) — TCP port scanner that never completes the handshake. It implements a detached thread for listening for SYN-ACKS and printing the open ports, while another thread is in charge of creating and dispatching SYN packets with a raw socket. The raw socket and manual SYN packet construction are necessary for never comleting the 3-way TCP handshake, and IP/TCP headers along with their checksums must and are manually computed when building the packets.
+- [SYN Scanner](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/port-scanner) — TCP port scanner that never completes the handshake. It implements a detached thread for listening for SYN-ACKS and printing the open ports, while another thread is in charge of creating and dispatching SYN packets with a raw socket. The raw socket and manual SYN packet construction are necessary for never completing the 3-way TCP handshake, and IP/TCP headers along with their checksums are manually computed when building the packets.
 
-  
-- [Packet Sniffer](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/packet-sniffer) — Records frames accross all interfaces (or used specified), writes to a rolling 2hr .pcap file readable in tcpdump or Wireshark. It operates as a systemd service through install and uninstall Bash scripts. It catches all frames at the socket level after setting promisc mode with ioctl. Filtering occurs at a higher level with if_indextoname() and comparing to argv. A PCAP global header is written on each initialization of the PCAP file and PCAP packet headers are implemented after every recv()
 
-  
-- [HTTP Server](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/http-server) — HTTP/1.1 static file server with MIME support. It uses an accept and then thread model. Uses TCP socket and parses HTTP GET methods with regex. If indicated file in GET returns a fd, then 200 ok is returned along with the file. If no file is found, then 404 is returned.
+- [HTTP Server](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/http-server) — HTTP/1.1 static file server with MIME support. It uses an accept and then thread model. Uses TCP socket and parses HTTP GET methods with regex. If the requested file is found, a 200 ok is returned along with the file; otherwise 404
 
   
 - [TCP Server & Client](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/tcp-suite) — Poll based TCP chat, server broadcasts to all clients, handles up to 100 concurrent connections. Client connections and disconnections are tracked with poll
@@ -37,3 +40,6 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 ## Notable Projects in Bash
 
 - [Linux Audit Tool](https://github.com/Nyveruus/Linux-and-bash/tree/main/security/audit-tool) — Linux auditing tool for Debian. Uses check functions to audit accounts, SSH config, password policy, and file permissions, rating each finding low, medium, or critical in severity. Supports argument parsing for targeting specific categories.
+
+
+- [rsync backup service](https://github.com/Nyveruus/Linux-and-bash/tree/main/backup/rsync-backup) — Systemd service, daily rsync backups to a file system, dates and logging
