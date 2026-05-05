@@ -15,16 +15,16 @@ Most of my time goes into projects, books, and man pages (lots of man pages...)
 ## Notable Projects in C
 
 
-- [Packet Sniffer](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/packet-sniffer) — Records frames across all interfaces (or user-specified), writes to a rolling 2hr .pcap file readable in tcpdump or Wireshark. It operates as a systemd service through install and uninstall Bash scripts. It catches all frames at the socket level after setting promisc mode with ioctl. Filtering occurs at a higher level with if_indextoname() and comparing to argv. A PCAP global header is written on each initialization of the PCAP file and PCAP packet headers are implemented after every recv()
+- [mTLS Chat](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/mtls-chat) — CLI mutual TLS chat with OpenSSL, selectable as server or client at runtime. All parties must present valid certificates signed by a common CA. Server multiplexes up to 100 client sockets and STDIN with poll(); minimum TLS protocol version for the handshake is TLS 1.3. On connect clients print the TLS session ticket and the server prints the client's IP. Continuation project of "TCP Server & Client" 
 
 
-- [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger) — Kernel-level keylogger. Records a keyboard event file in /dev/input and then exfiltrates over TCP. It reads the stream into input_event structs (from linux/input.h) for parsing and recording. It includes detection and prevention in the README
-
-  
 - [SYN Scanner](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/port-scanner) — TCP port scanner that never completes the handshake. It implements a detached thread for listening for SYN-ACKS and printing the open ports, while another thread is in charge of creating and dispatching SYN packets with a raw socket. The raw socket and manual SYN packet construction are necessary for never completing the 3-way TCP handshake, and IP/TCP headers along with their checksums are manually computed when building the packets.
 
 
-- [mTLS Chat](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/mtls-chat) — CLI mutual TLS chat with OpenSSL, selectable as server or client at runtime. All parties must present valid certificates signed by a common CA. Server multiplexes up to 100 client sockets and STDIN with poll(); minimum TLS protocol version for the handshake is TLS 1.3. On connect clients print the TLS session ticket and the server prints the client's IP. Continuation project of "TCP Server & Client" 
+- [Packet Sniffer](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/packet-sniffer) — Records frames across all interfaces (or user-specified), writes to a rolling 2hr .pcap file readable in tcpdump or Wireshark. It operates as a systemd service through install and uninstall Bash scripts. It catches all frames at the socket level after setting promisc mode with ioctl. Filtering occurs at a higher level with if_indextoname() and comparing to argv. A PCAP global header is written on each initialization of the PCAP file and PCAP packet headers are implemented after every recv()
+
+      
+- [Keylogger](https://github.com/Nyveruus/security-research/tree/main/offensive-security/tools/keylogger) — Kernel-level keylogger. Records a keyboard event file in /dev/input and then exfiltrates over TCP. It reads the stream into input_event structs (from linux/input.h) for parsing and recording. It includes detection and prevention in the README
 
   
 - [TCP Server & Client](https://github.com/Nyveruus/systems-programming/tree/main/projects/networking/tcp-suite) — Poll based TCP chat, server broadcasts to all clients, handles up to 100 connections. Client connections and disconnections are tracked with poll
