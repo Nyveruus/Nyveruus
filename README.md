@@ -1,17 +1,3 @@
-I'm an autodidact from Spain. I value depth of knowledge and I love to learn. Understanding the system is what makes you able to administer and defend it effectively, rather than only knowing how to use ephemeral tools.
-
-I gravitate towards low-level programming because there are fewer abstractions and I find the control and precision of statically typed languages like C to be elegant and compelling. Broadly speaking, I'm learning about systems programming, socket programming, and Linux internals. My favourite languages are C and Bash. 
-
-Most of my time goes into projects, books, and man pages (lots of man pages...)
-
-**Languages:** C, Bash, Python, Javascript, HTML/CSS  
-**Learning:** x86-64 ASM, Go
-
-### Reading
-
-- CS:APP
-- OSTEP
-
 ## Notable Projects in C
 
 
